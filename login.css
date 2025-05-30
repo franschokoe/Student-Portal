@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+:root{
+            --forbackround:#237db481;
+            --Header:#2772A0;
+            --forBorder:rgb(143, 205, 253);
+}
+.card-div{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 20px;
+    background-color:var(--forbackround);
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+.Log-name{
+    font-family: "Roboto",sans-serif;
+    padding: 5px;
+    font-size: 1.6rem;
+    color: var(--Header);
+}
+.Userform-div{
+    display: flex;
+    flex-direction: row;
+}
+.Userform-div form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-grow: 0;
+}
+.Userform-div label{
+    font-family: "Roboto",sans-serif;
+    font-size: 1.1rem;
+}
+.Userform-div input{
+    height: 30px;
+    width: 300px;/*Change in mobile responsive*/
+    font-size: 1.1rem;
+    border-radius: 50px;
+    padding-left: 10px;
+    overflow: hidden;
+    border-color: var(--forBorder);
+    border-style: solid;
+}
+.Userform-div input:hover{
+    border-color:hsl(186, 55%, 23%);
+}
+
+.submit-btn{
+    background-color: hsl(183, 46%, 78%);
+    cursor: pointer;
+}
+.ref-div{
+    align-items: center;
+}
+.ref-div p{
+    text-align: center;
+    font-family: "Roboto",sans-serif;
+}
+.ref-div p a {
+    text-decoration: none;
+    color:hsl(186, 42%, 30%);
+    text-align: center;
+}
+.ref-div p a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.Errorside2{
+    text-align: center;
+}
+.Errorside2 p {
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    font-size:1rem;
+    color: red;
+}
+@media all and (max-width:840px){
+    
+}
+
+@media all and (max-width:650px){
+    .Userform-div input{
+        height: 30px;
+        width: 100%;/*Change in mobile responsive*/
+        font-size: 1.1rem;
+        border-radius: 50px;
+        padding-left: 10px;
+        overflow: hidden;
+        border-color:var(--forBorder);
+        border-style: solid;
+    }
+}
+
+@media all and (max-width:480px) {
+    .Userform-div input{
+        height: 30px;
+        width: 100%;/*Change in mobile responsive*/
+        font-size: 1.1rem;
+        border-radius: 50px;
+        padding-left: 10px;
+        overflow: hidden;
+           border-color:var(--forBorder);;
+        border-style: solid;
+    }
+    .main-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 85%;
+        gap: 20px;
+        background-color : var(--forbackround);
+        border-radius: 20px;
+        padding-bottom: 20px;
+    }
+}
+

@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+:root{
+  --forbackround:#237db481;
+   --Header:#2772A0;
+    --forBorder:rgb(143, 205, 253); 
+}
+.main-container{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    background-color:var(--forbackround);
+}
+.Cover-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.Tittle-div{
+    text-align: center;
+    padding-top: 10px;
+}
+.Tittle-div h1{
+    color: var(--Header);
+    font-size: 1.9rem;
+    font-family: "Roboto",sans-serif;
+}
+.Register-div{
+    display: flex;
+    padding: 20px; /*to be changed in mobiledev*/
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+.Register-div form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.Register-div label{
+    font-family: "Roboto",sans-serif;
+    font-size: 1.1rem;
+}
+.Register-div input,button{
+    height: 30px;
+    width: 350px;/*tobe changed*/
+    border-style:solid ;
+    border-radius: 50px;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    overflow: hidden;
+    border-color: var(--forBorder);
+}
+.Register-div input:hover{
+    border-color:hsl(186, 55%, 23%);
+}
+.Register-div input:active{
+    border-color:hsl(186, 55%, 33%);
+}
+.signup-BUTTON{
+    background-color: var(--forbackround);
+    cursor: pointer;
+}
+.signup-BUTTON:hover{
+    background-color: rgba(255, 255, 255, 0.034);
+    border-color:var(--forBorder);
+}
+.lower-div{
+    text-align: center;
+}
+.lower-div p {
+    font-family: "Roboto",sans-serif;
+
+}
+.lower-div p a{
+    color:var(--Header);
+}
+.lower-div p a:hover{
+    text-decoration: underline;
+}
+@media all and (max-width:840px){
+    .main-container{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border-radius: 20px;
+        padding-bottom: 20px;
+        background-color:var(--forbackround);
+    }
+    .Register-div input,button{
+        height: 30px;
+        width: 300px;/*tobe changed*/
+        border-style:solid ;
+        border-radius: 50px;
+        padding-left: 10px;
+        font-size: 1rem;
+        overflow: hidden;
+        border-color: var(--forBorder);
+    }
+    
+}
+@media all and (max-width:650px){
+    .main-container{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border-radius: 20px;
+        padding-bottom: 20px;
+        background-color: var(--forbackround);
+    }
+    .Register-div{
+        display: flex;
+        padding: 15px; /*to be changed in mobiledev*/
+        flex-direction:column;
+        flex-wrap: wrap;
+    }
+    .Register-div input,button{
+        height: 30px;
+        width: 250px;/*tobe changed*/
+        border-style:solid ;
+        border-radius: 50px;
+        padding-left: 10px;
+        font-size: 1rem;
+        overflow: hidden;
+        border-color: var(--forBorder);
+    }
+}
+@media all and (max-width:480px){
+    .main-container{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border-radius: 20px;
+        padding-bottom: 20px;
+        background-color: var(--forbackround);
+    }
+    .Register-div input,button{
+        height: 30px;
+        width: 240px;/*tobe changed*/
+        border-style:solid ;
+        border-radius: 50px;
+        padding-left: 10px;
+        font-size: 1rem;
+        overflow: hidden;
+        border-color: var(--forBorder);
+    }
+}
+@media all and (max-width:425px){
+    .main-container{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border-radius: 20px;
+        padding-bottom: 20px;
+        background-color: var(--forbackround);
+    }
+    .Register-div input,button{
+        height: 30px;
+        width: 220px;/*tobe changed*/
+        border-style:solid ;
+        border-radius: 50px;
+        padding-left: 10px;
+        font-size: 1rem;
+        overflow: hidden;
+        border-color: var(--forBorder);
+    }
+}

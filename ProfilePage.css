@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: row; /*use column direction in mobile response*/
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    gap: 10%;
+}
+.image-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: -1;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    /* background-color: violet; */
+    /* padding: 5px; */
+
+}
+.userProfilePhoto img {
+    aspect-ratio: 1/1;
+    border: 2.5px;
+    border-style:solid;
+    border-color: hsl(186, 42%, 30%);/*change color at a point*/
+    border-radius: 50%;
+    object-fit: cover;
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+}
+.form-div{
+    text-align: center;
+}
+.userForm label{
+    font-size: 2rem;
+    font-family:"Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.info-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-shrink:1;
+    gap: 10%;
+}
+.std-infodiv{
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    color:hsl(186, 42%, 30%);
+    padding-bottom: 5%;
+}
+.UserInfo-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* padding-top: 10%; */
+    padding-left: 5%;
+    justify-content: center;
+    align-items:start;
+    height: 400px;
+    background-color: #e2f3f4;
+    font-size:50%;
+    border-radius:10px;
+    width: 450px;
+    overflow: hidden;
+}
+.UserInfo-div div{
+    justify-content:space-evenly;
+    height: 50px;
+}
+.UserInfo-div p{
+    font-size: 1.7rem;
+    font-family: "Roboto",sans-serif;
+    font-weight:550;
+}
+
+.Portal-header{
+    padding: 15px;
+    /* background-color: hsl(183, 46%, 78%); */
+    margin:0px;
+    background-color: #2772A0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-shrink: -1;
+}
+.header-logout button{
+    font-family: "Roboto",sans-serif;
+    font-size: 1rem;
+}
+.Aimclass{
+    font-family: "Roboto",sans-serif;
+    color:hsl(186, 42%, 30%);
+}
+.Main-content{
+    display: flex;
+    flex-direction:column;
+    gap: 45px;
+}
+.edit-update{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.edit-update p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color:hsl(186, 42%, 30%);
+}
+.edit-update button{
+    border:solid;
+    border-color: hsla(186, 95%, 31%, 0.603);
+    background-color: hsl(183, 46%, 78%);
+    font-size: 1.2em;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: "Roboto",sans-serif;
+}
+.edit-update button a{
+    text-decoration: none;
+    color: hsl(186, 42%, 30%);
+}
+.edit-update button:hover{
+    background-color:#e2f3f4
+}
+.upload-btn{
+    border:solid;
+    border-color: hsla(186, 95%, 31%, 0.603);
+    background-color: hsl(183, 46%, 78%);
+    font-size: 1.1em;
+    border-radius: 3px;
+    padding: 5px;
+    font-family: "Roboto",sans-serif;
+}
+footer{
+    height: 30px;
+    bottom: 0;
+}
+@media all and (max-width:840px){
+    .main-div{
+        display: flex;
+        flex-direction: row; /*use column direction in mobile response*/
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+        gap: 10%;
+    }
+    .UserInfo-div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        /* padding-top: 10%; */
+        padding-left: 5%;
+        justify-content: center;
+        align-items:start;
+        height: 380px;
+        background-color: #e2f3f4;
+        font-size:50%;
+        border-radius:10px;
+        width: 430px;
+        overflow: hidden;
+    }
+
+}
+@media all and (max-width:650px){
+    .main-div{
+        display: flex;
+        flex-direction: row; /*use column direction in mobile response*/
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+        gap: 10%;
+    }
+    .UserInfo-div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        /* padding-top: 10%; */
+        padding-left: 5%;
+        justify-content: center;
+        align-items:start;
+        height: 380px;
+        background-color: #e2f3f4;
+        font-size:50%;
+        border-radius:10px;
+        width: 390px;
+        overflow: hidden;
+    }
+
+}
+
+@media all and (max-width:480px) {
+    .main-div{
+        display: flex;
+        flex-direction: column; /*use column direction in mobile response*/
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+        gap: 15px;
+    }
+    .Main-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        flex-direction:column;
+        /* gap: 45px; */
+    }
+    .image-div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-grow: -1;
+        justify-content: center;
+        align-items: center;
+        gap:15px;
+        /* background-color: violet; */
+        padding: 5px;
+    
+    }
+    .userProfilePhoto img {
+        /* aspect-ratio: 1/1; */
+        border: 2.5px;
+        border-style:solid;
+        border-color: hsl(186, 42%, 30%);/*change color at a point*/
+        border-radius: 50%;
+        object-fit: cover;
+        width: 270px;
+        height: 270px;
+        overflow: hidden;
+    
+    }
+    .UserInfo-div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        /* padding-top: 10%; */
+        padding-left: 5%;
+        justify-content: center;
+        align-items:start;
+        height: 380px;
+        background-color: #e2f3f4;
+        font-size:50%;
+        border-radius:10px;
+        width: 340px;
+        overflow: hidden;
+    }
+    .UserInfo-div p{
+        font-size: 1.5rem;
+        font-family: "Roboto",sans-serif;
+        font-weight: 400;
+    }
+}
+
+
+
